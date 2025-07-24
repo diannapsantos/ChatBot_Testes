@@ -63,3 +63,7 @@ if __name__ == '__main__':
 
 
 # para correr os testes: python -m unittest -v testes_main_alunos.py
+def teste_saudacoes(self):
+    self.assertEqual(obter_resposta("olá"), "Olá tudo bem?")
+    self.assertEqual(obter_resposta("bom dia"), "Olá tudo bem?")
+    self.assertEqual(obter_resposta("boa tarde"), "Olá tudo bem?")
