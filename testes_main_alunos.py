@@ -67,3 +67,32 @@ def teste_saudacoes(self):
     self.assertEqual(obter_resposta("olá"), "Olá tudo bem?")
     self.assertEqual(obter_resposta("bom dia"), "Olá tudo bem?")
     self.assertEqual(obter_resposta("boa tarde"), "Olá tudo bem?")
+
+def teste_pergunta_como_estas(self):
+    self.assertEqual(obter_resposta("como estás"), "Estou bem, obrigado!")
+
+def teste_capital(self):
+    self.assertEqual(obter_resposta("capital de portugal"), "Lisboa")
+
+def teste_despedidas(self):
+    self.assertEqual(obter_resposta("bye"), "Gostei de falar contigo! Até à próxima!")
+    self.assertEqual(obter_resposta("adeus"), "Gostei de falar contigo! Até à próxima!")
+    self.assertEqual(obter_resposta("tchau"), "Gostei de falar contigo! Até à próxima!")
+
+def teste_historia(self):
+    self.assertEqual(obter_resposta("historia de portugal"), "Portugal tem uma rica história...")
+
+def teste_cozinhar(self):
+    self.assertEqual(obter_resposta("cozinhar"), "Cozinhar é uma arte que envolve a preparação de alimentos...")
+
+def teste_sabes_programar(self):
+    self.assertEqual(obter_resposta("sabes programar"), "Sim, posso ajudar com programação!")
+
+def teste_programar(self):
+    self.assertEqual(obter_resposta("programar"), "Programar é o processo de escrever código para criar software...")
+
+def teste_desenvolvimento_web(self):
+   self.assertEqual(
+    obter_resposta("desenvolvimento web"),
+    "O desenvolvimento web envolve a criação de sites e aplicações web..."
+)
